@@ -52,7 +52,7 @@ fun PlantTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = PlantTypography,
         content = content
     )
 }
