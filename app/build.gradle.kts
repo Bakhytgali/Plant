@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.plant"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.plant"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -50,6 +50,13 @@ android {
 }
 
 dependencies {
+    // NAVIGATION
+    implementation(libs.androidx.navigation.compose)
+
+    // Retrofit
+    implementation(libs.retrofit) // Retrofit
+    implementation(libs.converter.gson) // Конвертер JSON
+    implementation(libs.logging.interceptor) // Логирование запросов
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
